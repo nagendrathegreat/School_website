@@ -1,0 +1,687 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita&display=swap');
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* About Section Css Start */
+
+div.about-top {
+    width: 98%;
+    height: 20vh;
+    background: white;
+    margin-top: 10vh;
+    margin-left: 20px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgba(0, 0, 255, 0.553);
+    border-radius: 10px 10px;
+    font-family: "Crete Round", serif;
+    font-family: "Sofia Sans", sans-serif;
+    transition: all 0.9s linear 4ms;
+    box-shadow: 5px 5px 20px 3px rgba(154, 45, 45, 0.427);
+}
+
+div.about-top .about-in {
+    height: 18vh;
+    width: 25vw;
+    background-color: rgb(186, 68, 232);
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+
+    color: white;
+    transition: all 0.8s linear 4ms;
+    cursor: pointer;
+    z-index: 0;
+    translate: 0 -30px;
+
+}
+
+div.about-top .about-in:hover {
+
+    background-color: red;
+
+}
+
+div.about-top .about-in img {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin: 8px;
+
+}
+
+div.about-top .about-in span {
+    font-size: 20px;
+    padding: 30px 0px 10px 5px;
+}
+
+div.about-top .about-in span p {
+    font-size: 14px;
+    padding: 8px 12px 5px 12px;
+    margin: auto;
+}
+
+@media only screen and(max-width:912px) {
+    div.about-top .about-in:hover {
+        transform: rotateX(180deg);
+        background-color: rgba(249, 214, 16, 0.856);
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    div.about-top {
+        width: 100%;
+        height: 35vh;
+        background: linear-gradient(45deg, rgb(222, 219, 219), rgb(162, 143, 143));
+        margin-top: 1.5em;
+        margin-bottom: 2em;
+        display: block !important;
+
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        border: none;
+
+    }
+
+    div.about-top .about-in {
+        height: 11vh;
+        width: 100vw;
+        background-color: rgb(19, 4, 32);
+        border: 1px solid rgb(212, 58, 58);
+        margin: auto;
+        /* display: flex; */
+
+        color: white;
+        translate: 0 !important;
+    }
+
+    div.about-top .about-in:hover {
+        translate: 0px 0px !important;
+        transform: rotatex(0deg);
+
+        background-color: rgb(99, 106, 142) !important;
+
+    }
+
+    div.about-top .about-in img {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        margin: 8px;
+
+
+
+    }
+}
+
+/* start about-bot css */
+div.about-bot {
+    height: 400px;
+    width: 98%;
+    background-color: #FFFFFf;
+
+    margin: 20px;
+    z-index: 999;
+    box-shadow: 5px 5px 20px 3px rgba(58, 47, 47, 0.427);
+    display: flex;
+    flex-direction: row;
+
+}
+
+div.about-bot div.about-us {
+    height: 380px;
+    width: 46%;
+    border: 1px solid black;
+    margin: 10px 20px 10px 20px;
+    float: left;
+    display: flex;
+    /*  */
+}
+
+.about-mid {
+    overflow-x: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    div.about-bot {
+        height: 700px;
+        width: 96%;
+        background-color: #e7d5d5;
+
+        margin: 20px;
+        z-index: 999;
+        box-shadow: 5px 5px 20px 3px rgba(58, 47, 47, 0.427);
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    div.about-bot div.about-us {
+        height: 346px;
+        width: 94%;
+        border: 1px solid black;
+        margin: 5px 13px 5px 16px;
+        float: left;
+        display: block;
+        overflow-x: hidden;
+    }
+
+    div.about-bot div.about-us .about-mid {
+        overflow-x: auto;
+    }
+}
+
+
+/* end about-bot css */
+/* Start about-us and #notice css */
+div.about-us div.tab {
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: none !important;
+}
+
+div.about-us div.tab button.tabpane {
+    background-color: #081553;
+    color: white;
+    float: left;
+    border: 1px solid white;
+    outline: invert;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 15px;
+    width: 19em;
+    font-family: "Crete Round", serif;
+    font-family: "Sofia Sans", sans-serif;
+    transition: all 0.4s ease-in-out 4ms;
+    overflow-x: hidden;
+}
+
+div.about-us div.tab button.tabpane:hover {
+    background-color: #eadede;
+    color: black;
+}
+
+/* div.about-us div.tab button.tabpane:active {
+    background-color: yellowgreen;
+}*/
+
+.active {
+    background-color: goldenrod;
+}
+
+div.about-us div.tab div.tabcontent {
+    color: rgb(225, 49, 49);
+    display: none;
+    padding: 80px 20px 50px 20px;
+    height: auto;
+    background-size: contain;
+}
+
+#News {
+    background-color: rgb(247, 251, 247);
+}
+
+#Notice {
+    background-color: rgb(227, 227, 235);
+}
+
+table.table-notice {
+    width: 100%;
+
+}
+
+@media only screen and (max-width: 768px) {
+    div.about-us div.tab {
+        height: 100%;
+        margin: 0;
+    }
+
+    div.about-us div.tab button.tabpane {
+        background-color: #c11919;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 15px;
+        width: 10em;
+
+    }
+
+}
+
+
+/* End about-us and #notice css */
+
+
+/* start about-institue and about mid css */
+div#about-institute div.about-mid h3 {
+    color: red;
+    text-align: center;
+}
+
+div#about-institute div.about-mid p {
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Amita', cursive;
+    word-spacing: 3px;
+    ;
+    background-size: contain;
+    text-align: justify;
+    padding: 0px 10px 0px 10px;
+
+}
+
+div#about-institute div.about-mid p button {
+    background: transparent;
+    outline: 2px;
+    padding: 5px;
+    outline-color: blue;
+    border: none;
+}
+
+div#about-institute div.about-mid p button a {
+    text-decoration: none;
+    font-size: 16px;
+    color: red
+}
+
+/* end about-institue and about mid css */
+
+
+/* hero css start */
+div.hero{
+    height:50vh;
+    width:98%;
+    background-color: rgb(255, 255, 255);
+    margin:40px 20px 20px 20px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 20px 3px rgba(58, 47, 47, 0.427);
+}
+/* hero css end */
+
+/* Start Footer css */
+div.footer-top {
+    height: 50vh;
+    width: 100vw;
+    background: linear-gradient(45deg, rgba(40, 27, 128, 0.744), rgba(7, 3, 88, 0.826));
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 1px;
+
+
+    font-family: "Crete Round", serif;
+    font-family: "Sofia Sans", sans-serif;
+}
+
+div.footer-top div.footer-in {
+    color: rgb(247, 239, 239);
+    padding: 0px 50px 0px 50px;
+    text-decoration: none;
+}
+
+div.footer-top div.footer-in p {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+div.footer-top div.footer-in ul {
+    list-style: none;
+}
+
+div.footer-top div.footer-in ul li {
+    padding: 5px 0px;
+    /* margin-left:-7px;
+     */
+}
+
+div.footer-top div.footer-in ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    transition: all .4s ease-in-out 4ms;
+    color: white;
+}
+
+div.footer-top div.footer-in ul li a:hover {
+    padding: 0px 5px 0px 5px;
+    color: red;
+    margin-left: 7px;
+    border: 2px solid white;
+}
+
+div.footer-top div.footer-in p.login a{
+    border:2px solid white;
+    background-color:transparent;
+    padding:5px 8px;
+    text-decoration: none;
+    
+    color:white;
+    cursor:pointer;
+    transition: 0.4s ease-in-out 4ms;
+   
+    
+}
+
+div.footer-top div.footer-in p.login a:hover{
+    color:rgb(64, 3, 93);
+    background-color:white;
+    
+}  
+div.footer-in div.social-media {
+    margin:0px;
+    padding:10px 0px 6px 0px;
+  
+}
+div.footer-in div.social-media a{
+  
+    padding:10px 10px 6px 10px;
+    font-size:16px;
+    transition: all 0.4s ease-in-out 4ms;
+    text-decoration: none;
+    border-radius:50%;
+}
+div.footer-in div.social-media a:hover{
+    font-size:16px;
+    border:0px solid rgba(255, 255, 255, 0);
+    border-radius:50%;
+    color:red;
+    box-shadow: 1px 1px 30px 1px white;
+}
+@media only screen and (max-width:768px) {
+    div.footer-in div.social-media {
+        margin:auto;
+        padding:10px 0px 6px 0px;
+      
+    }
+}
+@media only screen and (max-width:768px) {
+    div.footer-top {
+        height: 100vh;
+
+        width: 100vw;
+        background: linear-gradient(45deg, rgba(64, 6, 159, 0.76), rgba(7, 3, 88, 0.838));
+        margin-top: 50px;
+        /* display: flex;
+        flex-direction: column;
+        align-items: flex-start; */
+        /* padding-top: 1px; */
+        display: block;
+
+        font-family: "Crete Round", serif;
+        font-family: "Sofia Sans", sans-serif;
+    }
+
+    div.footer-top div.footer-in {
+        color: rgb(245, 245, 245);
+        padding: 20px 30px 0px 30px;
+    }
+
+    div.footer-top div.footer-in ul li {
+        padding: 1px;
+    }
+}
+/* Style for footer mid */
+
+
+/* style the news-letter box */
+.news-letter input[type="email"] {
+    width: 80%;
+    height: 2em;
+    outline: none;
+    border: 0px;
+    border-radius: 0px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.news-letter input[type="email"]:hover {
+
+    background: linear-gradient(0deg, rgb(146, 154, 243), whitesmoke);
+}
+
+.news-letter input[type="email"]::placeholder {
+
+    color: midnightblue;
+    font-family: "Crete Round", serif;
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 1.2em !important;
+}
+
+.news-letter input[type="submit"] {
+
+    background-color: transparent;
+    width: 40%;
+    height: 2em;
+
+    border: 2px solid white;
+    border-radius: 0px;
+
+    font-size: 1.2em;
+    font-family: 'Crete Round', serif;
+    font-family: 'Sofia Sans', sans-serif;
+    padding-left: 0.5em;
+    padding-right: 0.em;
+    color: rgb(253, 253, 253);
+    cursor: pointer;
+    font-family: "Crete Round", serif;
+    font-family: "Sofia Sans", sans-serif;
+    transition: .4s ease-in-out 4ms;
+
+}
+
+.news-letter input[type="submit"]:hover {
+    background-color: white;
+    color: midnightblue;
+    font-weight: 700;
+}
+
+.footer-bot {
+    height: 9vh;
+    width: 100vw;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    background: linear-gradient(45deg, rgba(24, 22, 23, 0.76), rgba(2, 2, 88, 0.838));
+    padding-top: 5px;
+    margin-top: 0px;
+    font-family: "Crete Round", serif;
+    font-family: "Sofia Sans", sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+    .footer-bot {
+        height: 50px;
+        width: 100vw;
+        color: white;
+        font-size: 10px;
+        text-align: center;
+        background: linear-gradient(45deg, rgba(24, 22, 23, 0.76), rgba(2, 2, 88, 0.838));
+        padding-top: 7px;
+        margin-top: 0px;
+        font-family: "Crete Round", serif;
+        font-family: "Sofia Sans", sans-serif;
+
+    }
+
+}
+
+/* scroll to top button */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    transition: all .4s ease-in-out 4ms;
+}
+
+#myBtn {
+    transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    opacity: 0.5;
+    display: none;
+    cursor: pointer;
+}
+
+
+/* back to top */
+@font-face {font-family: "iconfont";
+    src: url('iconfont.eot?t=1516696716663'); /* IE9*/
+    src: url('iconfont.eot?t=1516696716663#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAAUoAAsAAAAAB4QAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAADMAAABCsP6z7U9TLzIAAAE8AAAARAAAAFZW7kiTY21hcAAAAYAAAABeAAABhpvcBr5nbHlmAAAB4AAAAVoAAAFwf2dYZGhlYWQAAAM8AAAALwAAADYQOW78aGhlYQAAA2wAAAAcAAAAJAfeA4RobXR4AAADiAAAAAwAAAAMC+kAAGxvY2EAAAOUAAAACAAAAAgAdgC4bWF4cAAAA5wAAAAfAAAAIAESAF1uYW1lAAADvAAAAUUAAAJtPlT+fXBvc3QAAAUEAAAAIwAAADTT5qeAeJxjYGRgYOBikGPQYWB0cfMJYeBgYGGAAJAMY05meiJQDMoDyrGAaQ4gZoOIAgCKIwNPAHicY2Bk/sE4gYGVgYOpk+kMAwNDP4RmfM1gxMjBwMDEwMrMgBUEpLmmMDgwVDxbydzwv4EhhrmBoQEozAiSAwAv5w0VeJzFkMENgDAMAy9t6QMxCA8G4sUcXamLdY1iQnkwQS05VhxLiQIsQBQPMYFdGA9OueZ+ZHU/eSZLjUBptXf1nyqiWXYNKplpsHmr/9i87qPTVyiDOrHVl4QbAzUOMwAAeJwdj71OwlAcxe+5135Q4CK9tx8UCpQK1aAk1oqDERYXjYPRyck4OenK4sBi4uDAEzioiU/gxhv4DJoYnZxdKRZPTs5yzj/5/4hCyPyTTZlLBFklm2SfHBMCtYsWpz6CKOnRLqxAsRzJWRRGgRa2emwPTkuVdtxPOo6qqSVw1LEVxP2oRyNsJwO6i9j2gUrVOzXbNZNNYLhR/TY9pI+wGmGtNNhID9aHMm4KfVQwzYpp3uuqouiULpU4rhw7p+QMNX1WSp41bazRBgqVyDs6Kzar5sVdcu23nRwwHkNUm/xlWPbKmW88W5gVbbmou14xXJEYfeddUfA7XyQTzVhf2QOLiUc6hOTQCSMODQuSIcoLnu2yY8cDiKCHpJ8B2VJlJ+lbnjO9qKQ/hqwZH6IuUqMm0ZgVuJSc/maJS+wYgJJt8lXLeJ89/Vfn8+wCEwhfSl9kL/wB4+w7egAAeJxjYGRgYADiFdG2U+L5bb4ycLMwgMC1XtEeBP1/KwsDsxGQy8HABBIFABZyCYQAeJxjYGRgYG7438AQw8IAAkCSkQEVMAMARwkCbAQAAAAD6QAABAAAAAAAAAAAdgC4eJxjYGRgYGBmCGRgZQABJiDmAkIGhv9gPgMAEPcBcAB4nGWPTU7DMBCFX/oHpBKqqGCH5AViASj9EatuWFRq911036ZOmyqJI8et1ANwHo7ACTgC3IA78EgnmzaWx9+8eWNPANzgBx6O3y33kT1cMjtyDRe4F65TfxBukF+Em2jjVbhF/U3YxzOmwm10YXmD17hi9oR3YQ8dfAjXcI1P4Tr1L+EG+Vu4iTv8CrfQ8erCPuZeV7iNRy/2x1YvnF6p5UHFockikzm/gple75KFrdLqnGtbxCZTg6BfSVOdaVvdU+zXQ+ciFVmTqgmrOkmMyq3Z6tAFG+fyUa8XiR6EJuVYY/62xgKOcQWFJQ6MMUIYZIjK6Og7VWb0r7FDwl57Vj3N53RbFNT/c4UBAvTPXFO6stJ5Ok+BPV8bUnV0K27LnpQ0kV7NSRKyQl7WtlRC6gE2ZVeOEXpc0Yk/KGdI/wAJWm7IAAAAeJxjYGKAAC4G7ICZkYmRmZGFgbGCLTlZtyS/gIEBABRQAuEA') format('woff'),
+    url('iconfont.ttf?t=1516696716663') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('iconfont.svg?t=1516696716663#iconfont') format('svg'); /* iOS 4.1- */
+  }
+  
+  .iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background:red;
+  }
+  
+  .icon-cc-top:before { content: "\e6a9"; }
+  #go-top {
+    display:none;
+    font-size: 30px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+  }  
+/* css start for Login Modal */
+div.modal{
+    border-radius: 0px;
+    color:black;
+    font-family: "Crete Round", serif;
+  font-family: "Sofia Sans", sans-serif;
+  
+}
+div.modal a{
+    border-radius: 0px;
+    color:rgb(234, 9, 9);
+    font-family: "Crete Round", serif;
+  font-family: "Sofia Sans", sans-serif;
+  text-decoration: none;
+  
+  margin:0px;
+  padding: 5px;
+  transition:0.4s ease-in 4ms;
+  
+}
+div.modal a:hover{
+    background-color:red;color:white;
+   
+}
+.form-group{
+    margin:10px;
+    padding:10px;
+    border:1px double darkolivegreen;
+}
+ div.modal .form-control{
+    padding:5px;
+    font-size:16px;
+    display:flex;
+    flex-direction: row;
+  align-items: center;
+
+
+ }
+ div.modal .form-control input[type="email"] {
+    width: 60%;
+    height: 2em;
+    outline: 0px;
+    border-top:0px;
+    border-right:0px;
+    border-left:0px;
+    border-bottom: 2px solid rgb(128, 92, 227);
+    border-radius: 0px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left:0.9em;
+    align-items: center;
+ }
+ div.modal .form-control input[type="password"] {
+    width: 60%;
+    height: 2em;
+    outline: 0px;
+    border-top:0px;
+    border-right:0px;
+    border-left:0px;
+    border-bottom: 2px solid rgb(128, 92, 227);
+  
+    border-radius: 0px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left:1.4em;
+    align-items: center;
+ }
+ div.modal .form-control input::placeholder{
+    color:mediumslateblue;
+ }
+ div.modal .form-control input[type="submit"] {
+    width: 25%;
+    
+    height: 2.4em;
+    outline:invert;
+    padding:1px;
+    border: 2px solid mediumslateblue;
+    border-radius: 0px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left:0em;
+    align-items: center;
+    /* background:mediumslateblue; */
+    cursor: pointer;
+    font-size: 1.0em;
+    transition: all 0.4s linear 4ms;
+ }
+ div.modal .form-control input[type="submit"]:hover {
+   
+    border: 2px solid mediumslateblue;
+    color:white;
+    align-items: center;
+    background:mediumslateblue;
+    cursor: pointer;
+   
+ }
+@media only screen and (max-width: 768px) {
+    div.modal{
+        border-radius: 0px;
+        color:rgb(130, 28, 28);
+        box-shadow: 5px 5px 20px 3px rgba(58, 47, 47, 0.427);
+        font-family: "Crete Round", serif;
+      font-family: "Sofia Sans", sans-serif;
+    }
+}
+/*  css end for For login modal */

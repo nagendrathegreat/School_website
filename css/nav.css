@@ -1,0 +1,542 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Sofia+Sans&display=swap");
+/* Custom scrollbar */
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+::-webkit-scrollbar:horizontal {
+  height: 8px;
+  background-color: red;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: goldenrod;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: goldenrod;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: yellowgreen;
+}
+
+body {
+  color: rgba(95, 71, 234, 0.5098039216);
+  font-family: sans-serif;
+  padding: 0px 0px;
+  margin: 0px;
+  /* font-size: 13px; */
+  /* background: url('../img/bg.png')  no-repeat; */
+}
+
+a {
+  text-shadow: none;
+  color: #83c41a;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  color: red;
+  background-color: #f3ec78;
+  background-image: linear-gradient(135deg, #f3ec78, #af4261, blue);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-family: "Crete Round", serif;
+  font-family: "Sofia Sans", sans-serif;
+}
+
+.demo {
+  width: 100%;
+  margin: 0px auto;
+  z-index:9999;
+}
+
+.options {
+  width: 200px;
+  float: left;
+  margin-top: 30px;
+}
+
+.options h3 {
+  font-size: 20px;
+}
+
+.options a {
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  display: block;
+  background: #535353;
+  color: #b86363;
+  text-decoration: none;
+}
+
+a.backLink {
+  float: right;
+  margin-bottom: 10px;
+}
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+/* 
+Ace Responsive Menu Plugin
+Version: 1.0
+Author: Samson Onna
+E-mail: samson3d@gmail.com
+Website: www.webthemez.com
+----------------------------------------*/
+/* Import Fonts
+----------------------------------------*/
+/* Ace Responsive Menu
+----------------------------------------*/
+a {
+  text-shadow: none;
+  color: #f4f2f0;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  z-index:999;
+}
+
+.ace-responsive-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: midnightblue;
+  float: left;
+  width: 100%;
+  font-family: "Crete Round", serif;
+  font-family: "Sofia Sans", sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  /* border-bottom: 3px solid #FD5025; */
+  
+  transition: all .4s ease-in-out 4ms ;
+}
+
+.ace-responsive-menu li {
+  list-style: none;
+}
+
+.ace-responsive-menu li ul {
+  display: none;
+}
+
+.ace-responsive-menu > li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-right: 1px solid white;
+  float: left;
+}
+
+.ace-responsive-menu li a {
+  color: #ce2424;
+}
+
+.ace-responsive-menu > li > a {
+  display: block;
+  position: relative;
+  margin: 0;
+  border: 0px;
+  padding: 10px 20px 10px 12px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: #f7f4f4;
+  transition: 0.4s ease-in-out 4ms;
+}
+
+.ace-responsive-menu li a i {
+  padding-right: 5px;
+  color: #06073d;
+}
+
+.ace-responsive-menu > li > a i {
+  font-size: 16px;
+  text-shadow: none;
+  color: #faf8f8;
+}
+
+.ace-responsive-menu li ul.sub-menu li a i {
+  padding-right: 10px;
+}
+
+.ace-responsive-menu li.menu-active > a {
+  /*background: #272727;*/
+  background-color: goldenrod;
+  color: midnightblue;
+}
+
+.ace-responsive-menu li .menu-active {
+  position: relative;
+}
+
+.ace-responsive-menu > li > a > .arrow:before {
+  margin-left: 15px;
+  display: inline;
+  font-size: 16px;
+  font-family: FontAwesome;
+  height: auto;
+  content: " ❯";
+  font-weight: 300;
+  text-shadow: none;
+  width: 10px;
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+.ace-responsive-menu li ul.sub-menu li > a > .arrow:before {
+  content: "\f105" !important;
+}
+
+.ace-responsive-menu > li > ul.sub-menu {
+  display: none;
+  list-style: none;
+  clear: both;
+  margin: 0;
+  position: absolute;
+  z-index: 999;
+}
+
+.ace-responsive-menu li ul.sub-menu {
+  /* background: #333;*/
+  background: rgb(233, 233, 249);
+  color: white;
+}
+
+.ace-responsive-menu li ul.sub-menu > li {
+  width: 199px;
+}
+
+.ace-responsive-menu li ul.sub-menu li a {
+  display: block;
+  margin: 0px 0px;
+  padding: 12px 20px 12px 15px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+  background: linear-gradient(90deg, HoneyDew, AliceBlue, whitesmoke);
+  border-right: 1px solid;
+  border-left: 1px solid midnightblue;
+  border-bottom: 0.1em solid rgb(9, 9, 103);
+  text-shadow: #06073d;
+  transition: 0.4s ease-in-out 4ms;
+}
+
+.ace-responsive-menu > li > ul.sub-menu > li {
+  position: relative;
+}
+
+.ace-responsive-menu > li > ul.sub-menu > li ul.sub-menu {
+  position: absolute;
+  left: 199px;
+  top: 0px;
+  display: none;
+  list-style: none;
+}
+
+.ace-responsive-menu > li > ul.sub-menu > li ul.sub-menu > li ul.sub-menu {
+  position: absolute;
+  left: 199px;
+  top: 0px;
+  display: none;
+  list-style: none;
+}
+
+.ace-responsive-menu > li > ul.sub-menu li > a > .arrow:before {
+  float: right;
+  margin-top: 1px;
+  margin-right: 0px;
+  display: inline;
+  font-size: 16px;
+  font-family: FontAwesome;
+  height: auto;
+  content: "\f104";
+  font-weight: 300;
+  text-shadow: none;
+}
+
+/* Menu Toggle Btn
+----------------------------------------*/
+.menu-toggle {
+  display: none;
+  float: left;
+  width: 100%;
+  background: #333;
+}
+
+.menu-toggle h3 {
+  float: left;
+  color: #FFF;
+  padding: 0px 10px 0px 10px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.menu-toggle .icon-bar {
+  display: block !important;
+  width: 18px;
+  height: 2px;
+  background-color: #F5F5F5 !important;
+  border-radius: 1px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  margin: 3px;
+}
+
+.menu-toggle .icon-bar:hover {
+  background-color: #F5F5F5 !important;
+}
+
+.menu-toggle #menu-btn {
+  float: right;
+  background: #cd2d2d;
+  border: 1px solid #0C0C0C;
+  padding: 6px 8px;
+  border-radius: 0px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.hide-menu {
+  display: none;
+}
+
+/* Accordion Menu Styles
+----------------------------------------*/
+ul[data-menu-style=accordion] {
+  width: 250px;
+}
+
+ul[data-menu-style=accordion] > li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0px;
+  float: none !important;
+}
+
+ul[data-menu-style=accordion] > li:first-child {
+  border-top: 2px solid #FD5025;
+}
+
+ul[data-menu-style=accordion] li ul.sub-menu > li {
+  width: 100%;
+}
+
+ul[data-menu-style=accordion] > li > a > .arrow:before {
+  float: right;
+  content: "\f105";
+}
+
+ul[data-menu-style=accordion] li.menu-active > a > .arrow:before {
+  content: "\f107" !important;
+}
+
+ul[data-menu-style=accordion] > li > ul.sub-menu {
+  position: static;
+}
+
+ul[data-menu-style=accordion] > li > a i {
+  padding-right: 10px;
+  color: #FF5737;
+}
+
+ul[data-menu-style=accordion] > li > ul.sub-menu > li ul.sub-menu {
+  position: static;
+}
+
+ul[data-menu-style=accordion] > li > ul.sub-menu > li ul.sub-menu > li ul.sub-menu {
+  position: static;
+}
+
+ul[data-menu-style=accordion] > li {
+  border-bottom: 1px solid #242424;
+}
+
+ul[data-menu-style=accordion] li a:hover {
+  background: #272727 !important;
+}
+
+ul[data-menu-style=accordion] ul.sub-menu li.menu-active > a > .arrow:before {
+  content: "\f107" !important;
+}
+
+/* Vertical Menu Styles
+----------------------------------------*/
+ul[data-menu-style=vertical] {
+  width: 200px;
+}
+
+ul[data-menu-style=vertical] > li {
+  float: none;
+}
+
+ul[data-menu-style=vertical] > li:first-child {
+  border-top: 2px solid #FD5025;
+}
+
+ul[data-menu-style=vertical] li ul.sub-menu > li {
+  width: 100%;
+}
+
+ul[data-menu-style=vertical] > li > a > .arrow:before {
+  float: right;
+  content: "\f105";
+}
+
+ul[data-menu-style=vertical] > li.menu-active {
+  position: relative;
+}
+
+ul[data-menu-style=vertical] > li > ul.sub-menu {
+  position: absolute;
+  left: 200px;
+  top: 0px;
+  width: 200px;
+}
+
+ul[data-menu-style=vertical] > li > a i {
+  padding-right: 10px;
+  color: #FF5737;
+}
+
+ul[data-menu-style=vertical] > li > ul.sub-menu > li ul.sub-menu {
+  position: absolute;
+  width: 200px;
+  left: 200px;
+}
+
+ul[data-menu-style=vertical] > li > ul.sub-menu > li ul.sub-menu > li ul.sub-menu {
+  position: absolute;
+  width: 200px;
+  left: 200px;
+}
+
+ul[data-menu-style=vertical] > li {
+  border-bottom: 1px solid #242424;
+}
+
+ul[data-menu-style=vertical] li a:hover {
+  background: #272727 !important;
+}
+
+/* Responsive Menu Styles
+----------------------------------------*/
+/*Note: change the max-width asper your requirment and change the same in aceResponsiveMenu({resizeWidth: "768" }) function*/
+@media screen and (max-width: 768px) {
+  .demo {
+    width: 100%;
+    padding: 0%;
+  }
+  ul[data-menu-style=vertical], ul[data-menu-style=accordion],
+  ul[data-menu-style=vertical] li ul.sub-menu {
+    width: 100% !important;
+  }
+  .ace-responsive-menu {
+    float: right;
+    width: 100%;
+  }
+  .ace-responsive-menu > li {
+    border-bottom: 1px solid #242424;
+    float: none;
+  }
+  .ace-responsive-menu li a:hover {
+    color: midnightblue !important;
+    background: #efe5e5 !important;
+  }
+  .ace-responsive-menu > li:first-child {
+    border-top: 2px solid #FD5025;
+  }
+  .ace-responsive-menu > li > a i {
+    padding-right: 10px;
+    color: #f80a0a;
+  }
+  .ace-responsive-menu > li > a > .arrow:before {
+    float: none;
+    content: " ❯";
+    font-weight: 300;
+    text-shadow: none;
+    width: 10px;
+    display: inline-block;
+    transform: rotate(90deg);
+  }
+  li.menu-active > a > .arrow:before {
+    content: " ❯";
+    font-weight: 300;
+    text-shadow: none;
+    width: 20px;
+    display: inline-block;
+    transform: rotate(90deg);
+  }
+  .ace-responsive-menu li ul.sub-menu > li {
+    width: 100%;
+  }
+  .ace-responsive-menu li ul.sub-menu li ul.sub-menu li a {
+    padding-left: 30px;
+  }
+  .ace-responsive-menu li ul.sub-menu li ul.sub-menu li ul.sub-menu li a {
+    padding-left: 50px;
+  }
+  .ace-responsive-menu > li > ul.sub-menu {
+    position: static;
+  }
+  .ace-responsive-menu > li > ul.sub-menu > li ul.sub-menu {
+    position: static;
+  }
+  .ace-responsive-menu > li > ul.sub-menu > li ul.sub-menu > li ul.sub-menu {
+    position: static;
+  }
+  .ace-responsive-menu li ul.sub-menu li.menu-active > a > .arrow:before {
+    content: " ❯";
+    font-weight: 300;
+    text-shadow: none;
+    width: 10px;
+    display: inline-block;
+    transform: rotate(90deg);
+  }
+}
+.swiper {
+  width: 100%;
+  height: 50vh;
+  
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 16px;
+  background: #de6d6d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 50vh;
+  background-size: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=nav.css.map */
