@@ -5,9 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Error page</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        h1{
+            text-align: center;
+        }
+        button{
+            border:none;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Error 404 Page Not Found</h1>
-    <h2><a href="index.html">Back To Home</a></h2>
+    
+
 </body>
 </html>
